@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Coiny", system-ui;
+}
+
+.carousel-item {
+    position: relative;
+  }
+  .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  }
+
+.carousel-inner .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.carousel-inner .carousel-caption h1 {
+    color: aliceblue;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.carousel-inner .carousel-caption h3 {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.carousel-inner .carousel-caption button {
+    border: none;
+    outline: none;
+    background: #f8abba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #1f3d47;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
